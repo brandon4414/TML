@@ -8,7 +8,7 @@ using System.ComponentModel;
 // This is the code for your desktop app.
 // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
 
-namespace TAHT
+namespace TML
 {
     public partial class Launcher : Form
     {
@@ -55,14 +55,14 @@ namespace TAHT
 
                 if (mods)
                 {
-                    DownloadFile(@"http://api.whatthehe.cc/TAHT/latest_mod.dll", Path.GetTempPath() + @"dl.dll");
+                    DownloadFile(@"http://api.whatthehe.cc/TML/latest_mod.dll", Path.GetTempPath() + @"dl.dll");
                 }
                 else
                 {
-                    DownloadFile(@"http://api.whatthehe.cc/TAHT/latest.dll", Path.GetTempPath() + @"dl.dll");
+                    DownloadFile(@"http://api.whatthehe.cc/TML/latest.dll", Path.GetTempPath() + @"dl.dll");
                 }
 
-                gamePath = System.IO.File.ReadAllText(Path.GetTempPath() + ".taht").ToString();
+                gamePath = System.IO.File.ReadAllText(Path.GetTempPath() + ".TML").ToString();
             }
             catch (Exception excp1)
             {
@@ -75,11 +75,11 @@ namespace TAHT
             FolderChooser f = new FolderChooser();
             try
             {
-                if (!File.Exists(Path.GetTempPath() + @"\.taht"))
+                if (!File.Exists(Path.GetTempPath() + @"\.TML"))
                 {
                     f.ShowDialog();
                 }
-                gamePath = File.ReadAllText(Path.GetTempPath() + @"\.taht");
+                gamePath = File.ReadAllText(Path.GetTempPath() + @"\.TML");
             }
             catch (Exception excp1)
             {
@@ -90,8 +90,8 @@ namespace TAHT
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            File.Delete(Path.GetTempPath() + @"\.taht");
-            System.Diagnostics.Process.Start(Directory.GetCurrentDirectory() + @"\taht.exe");
+            File.Delete(Path.GetTempPath() + @"\.TML");
+            System.Diagnostics.Process.Start(Directory.GetCurrentDirectory() + @"\TML.exe");
             Application.Exit();
         }
 
@@ -162,7 +162,7 @@ namespace TAHT
         private void aboutButton_Click(object sender, EventArgs e)
         {
             // hide launcher
-            label1.Hide();
+            titleLabel.Hide();
             changeDir.Hide();
             aboutButton.Hide();
             modChooser.Hide();
@@ -190,7 +190,7 @@ namespace TAHT
         private void backButton_Click(object sender, EventArgs e)
         {
             // Show launcher
-            label1.Show();
+            titleLabel.Show();
             changeDir.Show();
             aboutButton.Show();
             modChooser.Show();

@@ -1,4 +1,4 @@
-namespace TAHT
+namespace TML
 {
     partial class Launcher
     {
@@ -30,7 +30,7 @@ namespace TAHT
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Launcher));
             this.launch = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.titleLabel = new System.Windows.Forms.Label();
             this.changeDir = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.downloadBar = new System.Windows.Forms.ProgressBar();
@@ -77,20 +77,20 @@ namespace TAHT
             this.launch.UseVisualStyleBackColor = false;
             this.launch.Click += new System.EventHandler(this.launch_Click);
             // 
-            // label1
+            // titleLabel
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.CadetBlue;
-            this.label1.Location = new System.Drawing.Point(152, 8);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(602, 65);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "TABG AUTO-MOD HELPER";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.titleLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.titleLabel.AutoSize = true;
+            this.titleLabel.BackColor = System.Drawing.Color.Transparent;
+            this.titleLabel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.titleLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.ForeColor = System.Drawing.Color.CadetBlue;
+            this.titleLabel.Location = new System.Drawing.Point(238, 8);
+            this.titleLabel.Name = "titleLabel";
+            this.titleLabel.Size = new System.Drawing.Size(468, 65);
+            this.titleLabel.TabIndex = 14;
+            this.titleLabel.Text = "TABG MOD LOADER";
+            this.titleLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // changeDir
             // 
@@ -350,13 +350,13 @@ namespace TAHT
             this.pageViewer.ScriptErrorsSuppressed = true;
             this.pageViewer.Size = new System.Drawing.Size(953, 308);
             this.pageViewer.TabIndex = 37;
-            this.pageViewer.Url = new System.Uri("http://api.whatthehe.cc/TAHT/ftp_root/changelog.php", System.UriKind.Absolute);
+            this.pageViewer.Url = new System.Uri("http://api.whatthehe.cc/TML/ftp_root/changelog.php", System.UriKind.Absolute);
             this.pageViewer.WebBrowserShortcutsEnabled = false;
             // 
             // reloadButton
             // 
             this.reloadButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.reloadButton.BackgroundImage = global::TAHT.Properties.Resources.reload;
+            this.reloadButton.BackgroundImage = global::TML.Properties.Resources.reload;
             this.reloadButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.reloadButton.Location = new System.Drawing.Point(943, 76);
             this.reloadButton.Name = "reloadButton";
@@ -371,7 +371,7 @@ namespace TAHT
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.BackgroundImage = global::TAHT.Properties.Resources.gradient;
+            this.BackgroundImage = global::TML.Properties.Resources.gradient;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(977, 483);
             this.Controls.Add(this.reloadButton);
@@ -392,7 +392,7 @@ namespace TAHT
             this.Controls.Add(this.discordLabel);
             this.Controls.Add(this.downloadBar);
             this.Controls.Add(this.changeDir);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.launch);
             this.Controls.Add(this.aboutLogo);
             this.Cursor = System.Windows.Forms.Cursors.Default;
@@ -402,7 +402,7 @@ namespace TAHT
             this.MinimumSize = new System.Drawing.Size(993, 522);
             this.Name = "Launcher";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Text = "TAHT";
+            this.Text = "TML";
             this.Load += new System.EventHandler(this.Launcher_Load);
             this.modChooser.ResumeLayout(false);
             this.modChooser.PerformLayout();
@@ -415,7 +415,7 @@ namespace TAHT
 
         #endregion
         private System.Windows.Forms.Button launch;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.Button changeDir;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.ProgressBar downloadBar;

@@ -1,4 +1,4 @@
-﻿namespace TAHT
+﻿namespace TML
 {
     partial class FolderChooser
     {
@@ -42,9 +42,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(204, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 20);
+            this.label1.Size = new System.Drawing.Size(132, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Welcome to TAHT!";
+            this.label1.Text = "Welcome to TML!";
             // 
             // button1
             // 
@@ -73,7 +73,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::TAHT.Properties.Resources.gradient;
+            this.BackgroundImage = global::TML.Properties.Resources.gradient;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(560, 326);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);

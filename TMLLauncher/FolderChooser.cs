@@ -2,7 +2,7 @@
 using System.IO;
 using System.Windows.Forms;
 
-namespace TAHT
+namespace TML
 {
     public partial class FolderChooser : Form
     {
@@ -24,7 +24,7 @@ namespace TAHT
                 gamePath = Path.GetDirectoryName(gamePath);
 
                 button1.Enabled = false;
-                File.WriteAllText(Path.GetTempPath() + @"\.taht", gamePath);
+                File.WriteAllText(Path.GetTempPath() + @"\.TML", gamePath);
                 button2.Enabled = true;
             }
         }

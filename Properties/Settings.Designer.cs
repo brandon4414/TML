@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TAHT.Properties {
+namespace TML.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
